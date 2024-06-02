@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Nav() {
     // Temporary session state
-    const [session, setSession] = useState(false); //set true/false to test
+    const [session, setSession] = useState(true); //set true/false to test
     return (
       <nav className="navbar">
         <div className="container">

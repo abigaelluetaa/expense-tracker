@@ -1,3 +1,5 @@
+/* src/styles/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,23 +28,108 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-black {
+  background-color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.bg-gray-700 {
+  background-color: #4a5568;
+}
+
+.border-gray-600 {
+  border-color: #718096;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:border-blue-500:focus {
+  border-color: #4299e1;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.text-blue-500 {
+  color: #4299e1;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.navbar {
-  background-color: #333;
-  padding: 1rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .navbar {

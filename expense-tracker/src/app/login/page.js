@@ -1,9 +1,49 @@
+"use client";
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
 export default function LoginPage() {
-    return (
-      <main>
-        <div>
-            Login Page
+  
+  const router = useRouter();
+  const handleLogin = (event) => {
+    event.preventDefault();
+    // Placeholder for login logic
+    router.push('/dashboard');
+  };
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-black text-white">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold">Welcome to Expense Tracker</h1>
+      </div>
+      <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 className="text-2xl font-bold mb-6">Login</h2>
+        <form onSubmit={handleLogin}>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium">Email address</label>
+            <input
+              type="email"
+              id="email"
+              className="mt-1 p-2 w-full bg-gray-700 rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder="Enter email"
+            />
+          </div>
+          <div className="mb-6">
+            <label htmlFor="password" className="block text-sm font-medium">Password</label>
+            <input
+              type="password"
+              id="password"
+              className="mt-1 p-2 w-full bg-gray-700 rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder="Password"
+            />
+          </div>
+          <button className="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-500">Login</button>
+        </form>
+        <div className="mt-6 text-center">
+          <Link href="/" className="text-blue-500 hover:text-white">Signup</Link>
         </div>
-      </main>
-    );
+        
+      </div>
+    </main>
+  );
   }
