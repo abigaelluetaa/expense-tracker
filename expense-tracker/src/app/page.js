@@ -7,13 +7,13 @@ export default function Home() {
 
   const handleSignup = (event) => {
     event.preventDefault();
-    // Placeholder for signup logic
+    // TODO: signup logic
     router.push('/dashboard');
   };
 
   const handleLogin = (event) => {
     event.preventDefault();
-    // Placeholder for login logic
+    // TODO: login logic
     router.push('/dashboard');
   };
 

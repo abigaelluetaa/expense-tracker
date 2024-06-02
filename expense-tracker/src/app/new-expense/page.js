@@ -1,4 +1,4 @@
-export default function EditExpense() {
+export default function AddExpense() {
     return (
       <main>
         <div>
