@@ -31,3 +31,47 @@ body {
     text-wrap: balance;
   }
 }
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+.nav-links span {
+  color: #ddd;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.nav-links span:hover {
+  color: white;
+}
